@@ -6,7 +6,6 @@ Bohan Wang, Ke Wang, Siran Li
 
 Structure
 =================
-.
 ├── implementations.py: contains **all the implementations** required by the project
 ├── notes.md: general notes about the project development
 ├── README.md: this file :)
