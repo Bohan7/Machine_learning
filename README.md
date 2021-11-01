@@ -4,9 +4,9 @@ This is a repository for all code of project 1
 Members:
 Bohan Wang (321293)
 
-Ke Wang 
+Ke Wang (326760)
 
-Siran Li
+Siran Li (321825)
 
 Structure
 =================
