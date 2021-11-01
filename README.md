@@ -2,19 +2,39 @@
 This is a repository for all code of project 1
 
 Members:
-Bohan Wang
-Ke Wang
-Siran Li
+Bohan Wang, Ke Wang, Siran Li
 
-Browsing the folders
-====================
-The folder structure is the following:
+Structure
+=================
+.
+├── implementations.py: contains **all the implementations** required by the project
+├── notes.md: general notes about the project development
+├── README.md: this file :)
+├── requirements.txt: contains the packages used to run the project
+├── run.py: contains the **final code** to train the model
+├── tests.ipynb: a notebook that contains the tests of the required implementations, that can be used as guide for usage
+├── data: contains the datasets (.gitignore'd)
+├── notebooks
+│   ├── features_log.ipynb: contains our investigations about taking the logarithm of the features
+│   ├── features_overview.ipynb: contains the exploratory data analysis phase
+│   ├── logistic_regression.ipynb: contains out trials with logistic regression
+│   └── ridge_regression.ipynb: contains our trials with ridge regression
+└── src
+    ├── helpers.py: some helper functions used by different modules
+    ├── split.py: contains the function used to split the dataset into training and test sets
+    ├── k_fold.py: contains the functions used for cross-validation
+    ├── polynomials.py: contains the functions used to get the polynom
+    ├── logistic: contains the functions used to train the logistic regression model
+    │   ├── loss.py: contains the function to compute the loss
+    │   ├── gradient.py: contains the function to compute the gradient
+    │   ├── hessian.py: contains the function to compute the hessian
+    │   ├── implementations.py: contains the **logistic regression** implementations required by the project
+    │   └── sigmoid.py: contains the function to compute the sigmoid
+    └── linear: contains the functions used to train the linear regression model
+        ├── gradient.py: contains the function to compute the gradient
+        ├── implementations.py: contains the **linear regression** implementations required by the project
+        └── loss.py: contains the function to compute the loss function
 
-*    ``models``: The folder contains the neural network architectures.
-
-*    ``configs``: The folder contains the yml files for the configuration, e.g., epochs to run, learning rate changes. Most of the options for hyper-parameters can be changed here and are propagated to the network. For instance, you can change the dataset from CIFAR10 to CIFAR100 by changing the respective name in yml.
-
-*    ``utils``: Misc functions required for training.
 
 
 Train the network
