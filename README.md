@@ -15,6 +15,8 @@ Siran Li (321825)
 
 **run.py:** contains the code to produce exactly the same .csv predictions which we used in our best submission to the competition system.
 
+**proj1_helpers.py:** contains the functions provided by instructors
+
 ## Instuctions
 The feature engineering and models evaluations can be reproduced in:
 
