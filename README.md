@@ -8,7 +8,7 @@ Ke Wang (326760)
 
 Siran Li (321825)
 
-Structure
+## Structure
 =================
 **implementations.py:** contains **all function implementations** required by the project
 
@@ -16,7 +16,7 @@ Structure
 
 **run.py:** contains the code to produce exactly the same .csv predictions which we used in our best submission to the competition system.
 
-Instuctions
+## Instuctions
 =================
 The feature engineering and models evaluations can be reproduced in:
 
