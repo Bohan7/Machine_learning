@@ -22,33 +22,10 @@ The feature engineering and models evaluations can be reproduced in::
 
 ``project1.ipynb``
 
-Note: we change the labels [-1, 1] into [0, 1] for our logistic regression, which can 
+Note: we change the labels from {-1, 1} to {0, 1} for our logistic regression, which can make it model the probability.
 
+You can reproduce The training and the best prediction on the test set of the competition system::
 
+``run.py``
 
-Best submission
-=================
-
-To train the network, you can execute the following command::
-
-   python train_main.py --config configs/resnet_default.yml --label any-name-you-want-as-label
-
-If you want to call for CIFAR100, you can directly do that by using the ``resnet18_cifar100.yml`` yml file. 
-
-**Changing the dataset:** You can change the dataset by changing the name of the ``dataset/db`` field (in the yml). The datasets that exist by default in PyTorch, e.g., CIFAR10/CIFAR100/MNIST, are automatically downloaded if they do not exist. They are exported in the path ``dataset/root`` (which is set to ``/tmp/``).
-
-**Changing the resnet model:** You have two options: a) change the ``model/name`` (in the yml) to the resnet you want, e.g., ResNet34, b) change the ``model/name`` to ``ResNetnew`` and specify the number of of blocks with the argument ``num_blocks``.
-
-
-The resnet model used in Π-nets paper is the one in ``configs/resnet_pi-net.yml``. 
-
-Apart from PyTorch, the code depends on Pyaml [2]_.
-
-
-References
-==========
-
-.. [1] https://github.com/kuangliu/pytorch-cifar
-
-.. [2] https://pypi.org/project/pyaml/
 
