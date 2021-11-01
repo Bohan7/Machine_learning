@@ -16,7 +16,7 @@ Instuctions
 =================
 The feature engineering and models evaluations can be reproduced in 
 
-<h1>project1.ipynb<\h1>
+<h1>project1.ipynb</h1>
 
 
 
