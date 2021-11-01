@@ -6,38 +6,12 @@ Bohan Wang, Ke Wang, Siran Li
 
 Structure
 =================
-├── implementations.py: contains **all the implementations** required by the project
-
-├── notes.md: general notes about the project development
-├── README.md: this file :)
-├── requirements.txt: contains the packages used to run the project
-├── run.py: contains the **final code** to train the model
-├── tests.ipynb: a notebook that contains the tests of the required implementations, that can be used as guide for usage
-├── data: contains the datasets (.gitignore'd)
-├── notebooks
-│   ├── features_log.ipynb: contains our investigations about taking the logarithm of the features
-│   ├── features_overview.ipynb: contains the exploratory data analysis phase
-│   ├── logistic_regression.ipynb: contains out trials with logistic regression
-│   └── ridge_regression.ipynb: contains our trials with ridge regression
-└── src
-    ├── helpers.py: some helper functions used by different modules
-    ├── split.py: contains the function used to split the dataset into training and test sets
-    ├── k_fold.py: contains the functions used for cross-validation
-    ├── polynomials.py: contains the functions used to get the polynom
-    ├── logistic: contains the functions used to train the logistic regression model
-    │   ├── loss.py: contains the function to compute the loss
-    │   ├── gradient.py: contains the function to compute the gradient
-    │   ├── hessian.py: contains the function to compute the hessian
-    │   ├── implementations.py: contains the **logistic regression** implementations required by the project
-    │   └── sigmoid.py: contains the function to compute the sigmoid
-    └── linear: contains the functions used to train the linear regression model
-        ├── gradient.py: contains the function to compute the gradient
-        ├── implementations.py: contains the **linear regression** implementations required by the project
-        └── loss.py: contains the function to compute the loss function
+implementations.py: contains **all function implementations** required by the project
+project1.ipynb: contains all our work on feature engineering, cross validation and models evaluations
+run.py: contains the code to produce exactly the same .csv predictions which we used in our best submission to the competition system.
 
 
-
-Train the network
+Train the 
 =================
 
 To train the network, you can execute the following command::
