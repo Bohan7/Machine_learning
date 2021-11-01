@@ -20,7 +20,7 @@ Instuctions
 =================
 The feature engineering and models evaluations can be reproduced in::
 
-project1.ipynb
+``project1.ipynb``
 
 Note: we change the labels [-1, 1] into [0, 1] for our logistic regression, which can 
 
