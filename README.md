@@ -18,14 +18,14 @@ Structure
 
 Instuctions
 =================
-The feature engineering and models evaluations can be reproduced in::
+The feature engineering and models evaluations can be reproduced in:
 
 ``project1.ipynb``
 
 Note: we change the labels from {-1, 1} to {0, 1} for our logistic regression, which can make it model the probability.
 
-You can reproduce The training and the best prediction on the test set of the competition system::
+You can reproduce The training and the best prediction on the test set of the competition system:
 
-``run.py``
+``python run.py``
 
 
