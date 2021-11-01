@@ -72,8 +72,6 @@ def main():
     # load data
     y, tX, ids = load_csv_data(DATA_TRAIN_PATH)
 
-    y = y[:10]
-    tX = tX[:10, :]
     # Feature engineering
     # to avoid running the same process many times: 
     # first, we generate x_aug_temp using feauture augmentation methods except polynomial expansion and negative powers, 
@@ -82,6 +80,7 @@ def main():
     indicator_feature_1 = np.int32(tX[:, 0] == -999)
     indicator_feature_2 = np.int32(tX[:, 23] == -999) + np.int32(tX[:, 24] == -999) + np.int32(tX[:, 25] == -999)
     jet_num = tX[:, 22]
+
 
     print('Doing feature augmentation for training set\n')
 
@@ -108,8 +107,6 @@ def main():
 
     DATA_TEST_PATH = 'data/test.csv'
     _, tX_test, ids_test = load_csv_data(DATA_TEST_PATH)
-
-    tX_test = tX_test[:10, ]
 
     indicator_feature_1 = np.int32(tX_test[:, 0] == -999)
     indicator_feature_2 = np.int32(tX_test[:, 23] == -999) + np.int32(tX_test[:, 24] == -999) + np.int32(
